@@ -72,16 +72,8 @@ function makeSound(key){
 
 function buttonAnimation(key){
   var activeButton = document.querySelector("." +key);
-  
-  
-  try {
-  
+
        activeButton.classList.add("pressed");
-      setTimeout(function(){activeButton.classList.remove("pressed");},100);
-}
-catch(err) {
-  return;
-}
-  
+      setTimeout(function(){activeButton.classList.remove("pressed");},100);  
 
 }
